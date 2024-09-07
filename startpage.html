@@ -37,6 +37,34 @@
             text-align: center;
             background-color: #eeeeee;
         }
+
+        .circleBase {
+            border-radius: 50%;
+            vertical-align: middle;
+            display: table-cell;
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #my-div {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+        }
+        a.fill-div {
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -124,12 +152,12 @@
         </a>
     </div>
 
-    <div class="parent">
-        <div class="child3">
-            <a href="https://gmail.com" target="_blank">Gmail</a>
+    <div id="my-div parent">
+        <div class="circleBase">
+            <a href="https://gmail.com" target="_blank" class="fill-div">Gmail</a>
         </div>
-        <div class="child3">
-            <a href="https://https://www.americanexpress.com/en-us/account/login?inav=iNavLnkLog" target="_blank">AMEX</a>
+        <div class="circleBase">
+            <a href="https://www.americanexpress.com/en-us/account/login?DestPage=https%3A%2F%2Fglobal.americanexpress.com%2Fdashboard" target="_blank" class="fill-div">AMEX</a>
         </div>
     </div>
 </body>
