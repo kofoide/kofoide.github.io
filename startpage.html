@@ -1,12 +1,54 @@
-<html>
+<html><body>
+    <script async src="https://app3.weatherwidget.org/js/?id=ww_7aa514d6cd26"></script>
+    <script src="https://cdn.logwork.com/widget/digital.js"></script>
+    <script src="https://cdn.logwork.com/widget/currency_converter.js"></script>
+
+    <a href="https://logwork.com/current-time-in-london-united-kingdom-city-of-london" class="digital-clock" data-style="electronic" data-size="319" data-timezone="Europe/London" data-language="en">London</a>
 
 
-<script src="https://cdn.logwork.com/widget/digital.js"></script>
-<a href="https://logwork.com/current-time-in-london-united-kingdom-city-of-london" class="digital-clock" data-style="electronic" data-size="319" data-timezone="Europe/London" data-language="en">London</a>
+    <a href="https://logwork.com/free-currency-converter-calculator" class="currency_convertor" data-currencies="USD,EUR,GBP,MXN">Currency Converter</a>
 
-<script src="https://cdn.logwork.com/widget/currency_converter.js"></script>
-<a href="https://logwork.com/free-currency-converter-calculator" class="currency_convertor" data-currencies="USD,EUR,GBP,MXN">Currency Converter</a>
 
-<div id="ww_7aa514d6cd26" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl3252"],"font":"Arial","sl_ics":"one","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_cwi":3}'>Weather Data Source: <a href="https://wetterlang.de/wetter_21_tage/" id="ww_7aa514d6cd26_u" target="_blank">21 tage wettervorhersage</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_7aa514d6cd26"></script>
+    <div id="ww_22caec6b6af31" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/wetter_21_tage/" id="ww_22caec6b6af31_u" target="_blank">Wetter fur 21 tage</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_22caec6b6af31"></script>
+    
+    <script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id="142808,072102,089425,089167,048854,049881"
+           data-language="EN"
+           data-unit-system="IMPERIAL"
+           data-skin="dark"
+           data-widget-type="current6"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://www.tomorrow.io/weather-api/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by the Tomorrow.io Weather API"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+              width="250"
+              height="18"
+            />
+          </a>
+        </div> 
+</body>
 </html>
