@@ -194,5 +194,24 @@
             <a href="https://www.bbc.com" target="_blank" class="fill-div"></a>
         </div>
     </div>
+
+    <script>
+        (function(a,b,c,d,e,f,g,h,i){a[e]||(i=a[e]=function(){(a[e].q=a[e].q||[]).push(arguments)},i.l=1*new Date,i.o=f,
+        g=b.createElement(c),h=b.getElementsByTagName(c)[0],g.async=1,g.src=d,g.setAttribute("n",e),h.parentNode.insertBefore(g,h)
+        )})(window,document,"script","https://widgets.media.sportradar.com/uscommon/widgetloader","USW", {
+            language: 'en_us'
+        });
+        USW(
+            'addWidget', 
+            '#sr-widget', 
+            'us.common.scoreTicker', 
+            {
+                sport: 6,
+                allowedNcaafConferences: ["big12"],
+                disableSportDropdown: true,
+            }
+        );
+    </script>
+    <div id="sr-widget"></div>
 </body>
 </html>
